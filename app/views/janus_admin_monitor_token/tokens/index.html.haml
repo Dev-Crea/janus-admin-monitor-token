@@ -1,0 +1,29 @@
+.row
+  .small-12.columns
+    %h2= t('tokens.index.title_html')
+
+.row
+  .small-12.columns
+    - if @tokens.key?('error')
+      %h3
+        - if @tokens['error']['code'] == 490
+          = t('tokens.error.disabled_html')
+        - else
+          = @tokens['error']['reason']
+    - else
+      %table
+        %thead
+          %tr
+            %th= t('tokens.index.table.header.token_id')
+            %th
+        %tbody
+          - if @tokens['tokens'].empty?
+            %tr
+              %td{ colspan: 2 }
+                = t('tokens.index.table.empty.text')
+                = link_to t('tokens.index.table.empty.link'), new_token_path
+          - else
+            - @tokens.each do |token|
+              %tr
+                %td= token
+                %td delete

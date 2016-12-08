@@ -1,0 +1,13 @@
+%li
+  = link_to janus_admin_monitor_token.tokens_path do
+    %i.fi-key.show-for-medium
+    = t('menu.tokens.button')
+  %ul.menu.vertical
+    %li
+      = link_to janus_admin_monitor_token.tokens_path do
+        %i.fi-list
+        = t('menu.tokens.dropdown.list')
+    %li
+      = link_to janus_admin_monitor_token.new_token_path do
+        %i.fi-plus
+        = t('menu.tokens.dropdown.add')

@@ -1,0 +1,12 @@
+.row
+  .small-12.columns
+    %h1= t('tokens.new.title')
+
+.row
+  .small-12.columns
+    = form_tag tokens_path, method: :post, class: 'input-group' do
+      %label.input-group-label{ for: 'new' }
+        = t('tokens.new.label')
+      = text_field_tag :new, nil, class: 'input-group-field', id: :new
+      %span.input-group-button
+        %input.button{ type: :submit, value: 'Create' }

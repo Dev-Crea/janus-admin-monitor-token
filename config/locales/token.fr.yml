@@ -1,0 +1,26 @@
+---
+
+fr:
+  menu:
+    tokens:
+      button: Tokens
+      dropdown:
+        list: Lister les tokens
+        add: Ajouter un token
+  tokens:
+    index:
+      title_html: Tokens
+      table:
+        empty:
+          text: No token yet.
+          link: Add a new token.
+        header:
+          token_id: Token ID
+    new:
+      title: Add a new token
+      label: Id to token (if empty auto generated)
+    error:
+      disabled_html: |
+        L'authentification par token est désactivé.
+        <a href="https://janus.conf.meetecho.com/docs/auth.html">
+        Consulter la documentation Janus</a>.
