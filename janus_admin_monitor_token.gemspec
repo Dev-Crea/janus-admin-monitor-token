@@ -5,11 +5,11 @@ require 'janus_admin_monitor_token/info'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  spec.version = if ENV['TRAVIS'] && !ENV['TRAVIS_BRANCH'].eql?('master')
-                   "#{JanusAdminMonitorToken::VERSION}-#{ENV['TRAVIS_BUILD_NUMBER']}"
-                 else
-                   JanusAdminMonitorToken::VERSION
-                 end
+  s.version = if ENV['TRAVIS'] && !ENV['TRAVIS_BRANCH'].eql?('master')
+                "#{JanusAdminMonitorToken::VERSION}-#{ENV['TRAVIS_BUILD_NUMBER']}"
+              else
+                JanusAdminMonitorToken::VERSION
+              end
   s.name        = 'janus_admin_monitor_token'
   s.authors     = ['']
   s.email       = ['jeremy.vaillant@dazzl.tv']
