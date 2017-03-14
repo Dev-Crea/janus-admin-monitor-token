@@ -11,7 +11,7 @@ before_install:
   - gem update --system
 
 script:
-  - rake
+  - rspec
 
 before_deploy:
   - gem install dpl
