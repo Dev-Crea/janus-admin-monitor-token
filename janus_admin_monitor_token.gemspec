@@ -11,7 +11,6 @@ Gem::Specification.new do |s|
                 JanusAdminMonitorToken::VERSION
               end
   s.name        = 'janus_admin_monitor_token'
-  s.authors     = ['']
   s.email       = ['jeremy.vaillant@dazzl.tv']
 
   s.summary     = JanusAdminMonitorToken::SUMMARY
@@ -23,6 +22,8 @@ Gem::Specification.new do |s|
   s.author      = 'VAILLANT Jeremy'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+
+  s.add_development_dependency 'rspec', '~> 3.5'
 
   s.add_dependency 'rails', '~> 5.0.0', '>= 5.0.0.1'
   s.add_dependency 'ruby_rabbitmq_janus', '~> 2.0.0.pre.95'
