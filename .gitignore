@@ -53,7 +53,7 @@ build-iPhoneSimulator/
 .rvmrc
 
 # lock files
-Gemfile.lock
+# Gemfile.lock
 
 log/*.log
 test/dummy/db/*.sqlite3

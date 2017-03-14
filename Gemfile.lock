@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    janus_admin_monitor_token (0.1.0)
+    janus_admin_monitor_token (0.1.0.pre.42)
       haml (~> 4.0, >= 4.0.7)
       haml-rails (~> 0.9.0)
       rails (~> 5.0.0, >= 5.0.0.1)
