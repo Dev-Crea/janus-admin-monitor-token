@@ -1,0 +1,34 @@
+sudo: false
+
+language: ruby
+
+rvm:
+  - 2.4.0
+  - 2.3.1
+
+before_install:
+  - bundle update
+  - gem update --system
+
+script:
+  - rake
+
+before_deploy:
+  - gem install dpl
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: H6WLnQXABCXjYUOYu1nKCcR0nzCM7mpDkHJFaI59rD6EiDr829+l3HTSDxqOS7uFJDBVS8/P3O3KRYwF/IkgdNNzMhrPxTO67h/xrefIpsA6GZOLBRYMpCsr/gaiQ3MaSUkWua9NWdnytimOvLH9GLUPlP6b//uzkLyzCDsjSi/HAsSwCV8KXOPlvKV9GLsjeMDFc6Y9YVM6JajaQJyfbRALFdjis0YYDgb9Givo+dvk+gjl10kYlPLpTXjMnJTzgULl8qM1zjb2hu2eANZQ0KiibGjpdlu91BBAAkhw9w7Lfdap8XULnnlQxqhn6/uwSOaK2RhpielfsYpjotUsgB0x+1OFJQEe4kcTY614sS4J8UKfSc5v4rEfhorF7wMiIAxxScw+c6kU+dQiitSWe98BrOdZSWmObY4L92RUTprcARWMAEozQOupYZXf/qu7Fu8nbo5daPb8FJ4TxlIv+1qe3/SLb4BhfN9+JHO9pmZ7wMbg++qjRVF+yDaRTxcC0wadrsTUiafZ3TnrX0PbC9MUbTvfIfykTxfrHbquQNwmJSOS9FlS4GifdyesOJBoefPwUc4MAGg8sl25T4qnCbPXhoCQyhCWi0thZgXdwJoNXg2rqsB9SVc9w6pstlVPTQJLsVBpWwjavYjgxEPaj2vwZbSwZPzYca5hFfvfPTc=
+  gem: janus_admin_monitor_token
+  on:
+    repo: Dev-Crea/janus-admin-monitor-token
+    all_branches: true
+  skip_cleanup: true
+
+notifications:
+  email: false
+  slack:
+    on_success: always
+    rooms:
+      secure: fejevy0HNOCuxPBWBLCiQgKP7t9P6QmpMFYQt1DAmxR5HNbHtllrQ/rux7rTBcFNwt3QGYO12OavETk/JPoXSjMVA4EHAbVvJH29R1apwFoE172KYbUkZPN1FxweiyzGB+3t6j8qj9NIWC/fs6zYDPuDDbjYPWgbD0RhppGpOFSiz7eOWyjVzCWJYZWL9ouxVeO5RmnS0bVOj+nhDYBZG965WHGpFOkOFNP1g8Z/WRwh7V7X5gOMKEzbjRmBPTVTpitnd9abSBo2MWHbiCe1L8/Ujnglu721VjjYHZme8NUz8SqY1+4I6a0VI/LESH1w013dLi5qibmr7pZc912HU3HzCEUV4riSJCgYgWBoe/mH3G7Vl5Ye+L+VE2brOdfvE5nqkLaCkTNkhAEIbV+Jdxx3ox0FQjxpGhiIoJWL/Xs/rqZog5IWgWAznjFSl5gn4g2sLFR+uw059YKy5RU7Do0nMPAmS4oiNls+q1cpg4TXfJVuqzm0D7+ba8igoKgQ/TvwYMmLAumpiWup0NdHoCf+NV3mAmpBfIQemWg3zU++6k9qC+ajcBwWiBD2Y8YskglsYQLkVRBdVapTjoReJAZte9VnN9p/Lie68npymLJuMAqZKm1htNkcNAoDbnlfd2hjwDQ55/wKPXJNKTIL3VcXAQTOMSNTqD0XWh/tjQw=
