@@ -17,8 +17,7 @@ module JanusAdminMonitorToken
     end
 
     # GET /tokens/new
-    def new
-    end
+    def new; end
 
     # POST /tokens
     def create

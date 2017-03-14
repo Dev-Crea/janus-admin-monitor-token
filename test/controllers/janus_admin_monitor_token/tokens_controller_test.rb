@@ -8,40 +8,40 @@ module JanusAdminMonitorToken
       @token = janus_admin_monitor_token_tokens(:one)
     end
 
-    test "should get index" do
+    test 'should get index' do
       get tokens_url
       assert_response :success
     end
 
-    test "should get new" do
+    test 'should get new' do
       get new_token_url
       assert_response :success
     end
 
-    test "should create token" do
+    test 'should create token' do
       assert_difference('Token.count') do
-        post tokens_url, params: { token: {  } }
+        post tokens_url, params: { token: {} }
       end
 
       assert_redirected_to token_url(Token.last)
     end
 
-    test "should show token" do
+    test 'should show token' do
       get token_url(@token)
       assert_response :success
     end
 
-    test "should get edit" do
+    test 'should get edit' do
       get edit_token_url(@token)
       assert_response :success
     end
 
-    test "should update token" do
-      patch token_url(@token), params: { token: {  } }
+    test 'should update token' do
+      patch token_url(@token), params: { token: {} }
       assert_redirected_to token_url(@token)
     end
 
-    test "should destroy token" do
+    test 'should destroy token' do
       assert_difference('Token.count', -1) do
         delete token_url(@token)
       end
