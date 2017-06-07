@@ -1,5 +1,5 @@
 module JanusAdminMonitorToken
-  VERSION = '0.2.0'.freeze
+  VERSION = '0.3.0'.freeze
   SUMMARY = 'This an addon for JanusAdminMonitor services'.freeze
   DESCRIPTION = \
     'This addon for JanusAdminMonitor services. It provides management for tokens.'.freeze
