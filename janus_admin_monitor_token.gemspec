@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 3.5'
 
   s.add_dependency 'rails', '~> 5.0.0', '>= 5.0.0.1'
-  s.add_dependency 'ruby_rabbitmq_janus', '~> 2.1.0.pre.130'
+  s.add_dependency 'ruby_rabbitmq_janus', '~> 2.1.0.pre.135'
 
   s.add_dependency 'haml', '~> 4.0', '>= 4.0.7'
   s.add_dependency 'haml-rails', '~> 0.9.0'
