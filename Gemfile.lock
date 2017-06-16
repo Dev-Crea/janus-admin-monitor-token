@@ -1,11 +1,11 @@
 PATH
   remote: .
   specs:
-    janus_admin_monitor_token (0.3.0.pre.42)
+    janus_admin_monitor_token (0.3.1.pre.42)
       haml (~> 4.0, >= 4.0.7)
       haml-rails (~> 0.9.0)
       rails (~> 5.0.0, >= 5.0.0.1)
-      ruby_rabbitmq_janus (~> 2.1.0.pre.135)
+      ruby_rabbitmq_janus (~> 2.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -128,7 +128,7 @@ GEM
     rspec-support (3.6.0)
     ruby_parser (3.9.0)
       sexp_processor (~> 4.1)
-    ruby_rabbitmq_janus (2.1.0.pre.135)
+    ruby_rabbitmq_janus (2.1.1)
       bunny (~> 2.5)
       key_path (~> 1.2)
       semaphore (~> 0.0.1)
