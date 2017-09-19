@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module JanusAdminMonitorToken
-  VERSION = '0.3.3'.freeze
+  VERSION = '0.3.4'.freeze
   SUMMARY = 'This an addon for JanusAdminMonitor services'.freeze
   DESCRIPTION = \
     'This addon for JanusAdminMonitor services. It provides management ' \
