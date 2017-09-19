@@ -29,5 +29,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'haml', '~> 4.0', '>= 4.0.7'
   s.add_dependency 'haml-rails', '~> 0.9.0'
 
-  s.add_runtime_dependency 'ruby_rabbitmq_janus', '~> 2.0', '>= 2.0.0'
+  s.add_runtime_dependency 'ruby_rabbitmq_janus', '~> 2.2.0'
 end
